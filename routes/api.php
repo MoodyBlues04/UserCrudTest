@@ -22,4 +22,5 @@ Route::group(['as' => 'auth.', 'prefix' => 'auth'], function () {
 });
 
 Route::resource('user', UserController::class)
+    ->except(['create', 'edit'])
     ->middleware('auth:sanctum');

@@ -15,3 +15,5 @@ php >=8.0 mysql/sqlite
 6. enjoy
 
 ## Api docs
+
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/21420675-418fec31-32b6-4ac3-86ef-712bf94c1974?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D21420675-418fec31-32b6-4ac3-86ef-712bf94c1974%26entityType%3Dcollection%26workspaceId%3D5559677a-85b3-49d4-acb1-30d7400ec155)

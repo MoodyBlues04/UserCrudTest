@@ -7,15 +7,12 @@ use App\Http\Requests\Api\Auth\LoginRequest;
 use App\Http\Requests\Api\Auth\RegisterRequest;
 use App\Services\AuthService;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Session;
 
 class AuthController extends ApiController
 {
     public function __construct(private readonly AuthService $authService)
     {
-        $this->middleware('auth:sanctum')->only('logout');
-        $this->middleware('guest')->only(['login', 'register']);
+        $this->middleware('guest');
     }
 
     public function register(RegisterRequest $request): JsonResponse
